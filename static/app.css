@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(150, 222, 252);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+table {
+    width: 40%;
+    height: 10px;
+    font-size: 2em;
+    color: black;   
+}
+
+td {
+    border: 1px solid whitesmoke;
+    border-radius: 10%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+#replay {
+    display: none;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: rgb(82, 240, 82);
+}

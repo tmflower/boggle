@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}New Game{% endblock %}
+{% block content %}
+<form action="/check-word" method="POST" class="check-word">
+    <label for="guess">Try a word:</label>
+    <input type="text" class="word" name="word" placeholder="enter your word" autofocus>
+    <button>Check word</button>
+</form>
+<p id="feedback"></p>
+<h3 id="score">Score: 0</h3>
+<h4 id="timer">Time remaining: 60 seconds</h4>
+<form action="/" method="GET">
+    <button id="replay">Play again!</button>
+<br>
+<table>
+    <tr>
+        {% for row in board %}
+    </tr>
+            {% for letter in row %}
+            <td>{{ letter }}</td>
+            {% endfor %}
+        {% endfor %}   
+</table>
+<ul id="valid_words">Your words:
+</ul>
+{% endblock %}

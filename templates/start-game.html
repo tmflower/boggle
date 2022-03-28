@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Start Game{% endblock %}
+{% block content %}
+<p>Your highest score: {{hi_score}}</p>
+<p>Number of games played: {{num_plays}}</p>
+<form action="/new-game">
+    <button>Start Game!</button>
+</form>
+{% endblock %}
